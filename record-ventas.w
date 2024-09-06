@@ -472,8 +472,8 @@ chWorkSheet:Columns("Z"):ColumnWidth = 8.
 
 
 chWorkSheet:Range("A1:C1"):Font:Bold = TRUE.
-chWorkSheet:Range("A1"):Value = "CHAIRES SERVICIOS GASTRONOMICOS".
-chWorkSheet:Range("A2"):Value = "Suc. Himno Nacional".
+chWorkSheet:Range("A1"):Value = " SERVICIOS GASTRONOMICOS".
+chWorkSheet:Range("A2"):Value = "Suc. ".
 chWorkSheet:Range("A3"):Value = "".
 chWorkSheet:Range("A4"):Value = "CLAVE".
 chWorkSheet:Range("B4"):Value = "PRODUCTO".
@@ -560,7 +560,7 @@ PROCEDURE llena_tempo :
 DEF VAR v-clainv AS CHARACTER.
 DEF VAR v-desart AS CHARACTER.
 
-INPUT FROM VALUE("c:\chaires\pasteleria.csv").
+INPUT FROM VALUE("datos.csv").
 
 REPEAT:
     IMPORT DELIMITER "," v-clainv v-desart.
